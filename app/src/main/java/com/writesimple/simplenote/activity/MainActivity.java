@@ -80,6 +80,9 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.functions.Consumer;
+import io.reactivex.schedulers.Schedulers;
 
 import static android.graphics.Color.parseColor;
 
@@ -212,10 +215,17 @@ public class MainActivity extends BaseActivity  implements SearchView.OnQueryTex
                     adapter.addNote(notes, loadSharedValueSort());
                     setTextSortVisible(notes);
                 });*/
-        noteViewModel.getAllRx().observe(this,notes -> {
+       /* noteViewModel.getAllRx().observe(this,notes -> {
             adapter.addNote(notes, loadSharedValueSort());
             setTextSortVisible(notes);
-        });
+        });*/
+        noteViewModel.dataBase.noteDao().getAllRx()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(notes -> {
+                    adapter.addNote(notes, loadSharedValueSort());
+                    setTextSortVisible(notes);
+                });
         TextView subs = header.findViewById(R.id.subs);
         userViewModel.getDate().observe(this,date -> {
            if(date!=null){
