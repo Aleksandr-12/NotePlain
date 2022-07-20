@@ -226,7 +226,6 @@ public class ActivityEditNote extends BaseActivity {
             }
             @Override
             public void onNext(@NotNull NoteBase detailNote) {
-                Log.d("xxxxxxxxxxxxxxxxxxxxxxx",detailNote+" //");
 
             }
             @Override
