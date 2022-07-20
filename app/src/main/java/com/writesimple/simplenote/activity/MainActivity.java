@@ -208,17 +208,6 @@ public class MainActivity extends BaseActivity  implements SearchView.OnQueryTex
             setTextSortVisible(notes);
         });*/
 
-      /*  noteViewModel.dataBase.noteDao().getAllRx()
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(notes -> {
-                    adapter.addNote(notes, loadSharedValueSort());
-                    setTextSortVisible(notes);
-                });*/
-       /* noteViewModel.getAllRx().observe(this,notes -> {
-            adapter.addNote(notes, loadSharedValueSort());
-            setTextSortVisible(notes);
-        });*/
         noteViewModel.dataBase.noteDao().getAllRx()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
@@ -226,6 +215,11 @@ public class MainActivity extends BaseActivity  implements SearchView.OnQueryTex
                     adapter.addNote(notes, loadSharedValueSort());
                     setTextSortVisible(notes);
                 });
+       /* noteViewModel.getAllRx().observe(this,notes -> {
+            adapter.addNote(notes, loadSharedValueSort());
+            setTextSortVisible(notes);
+        });*/
+
         TextView subs = header.findViewById(R.id.subs);
         userViewModel.getDate().observe(this,date -> {
            if(date!=null){
