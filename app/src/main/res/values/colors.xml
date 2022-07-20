@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#1B9E76</color>
+    <color name="colorTheme">#1B9E76</color>
+    <color name="colorLight">#FF09B682</color>
+    <color name="colorDark">#5EB59B</color>
+    <color name="colorBunttonFont">#044934</color>
+    <color name="backgroundNote">#E0F6EF</color>
+    <color name="backgroundEllow">#33FFEA00</color>
+    <color name="white">#fff</color>
+    <color name="blue">#00aade</color>
+
+    <color name="fc6eff">#fc6eff</color>
+    <color name="be061a8">#e061a8</color>
+    <color name="bff6d6e">#ff6d6e</color>
+    <color name="bffb26c">#ffb26c</color>
+    <color name="ffd7b3">#ffd7b3</color>
+    <color name="e0c4d3">#e0c4d3</color>
+    <color name="bfffb6c">#fffb6c</color>
+    <color name="bb1ff6d">#b1ff6d</color>
+    <color name="b6dff6e">#6dff6e</color>
+    <color name="b6effb4">#6effb4</color>
+    <color name="b6dfefb">#6dfefb</color>
+    <color name="b6efffc">#6efffc</color>
+    <color name="b6fbeff">#6fbeff</color>
+    <color name="b6e6eff">#6e6eff</color>
+    <color name="red">#EB2415</color>
+
+
+    <array name="dataColor">
+        <item name="white">#fff</item>
+        <item name="white">#B3EBFAFE</item>
+        <item name="#fc6eff">#fc6eff</item>
+        <item name="#e061a8">#e061a8</item>
+        <item name="#ff6d6e">#ff6d6e</item>
+        <item name="#ffb26c">#ffb26c</item>
+        <item name="ffd7b3">#ffd7b3</item>
+        <item name="e0c4d3">#e0c4d3</item>
+        <item name="#fffb6c">#fffb6c</item>
+        <item name="#b1ff6d">#b1ff6d</item>
+        <item name="#6dff6e">#6dff6e</item>
+        <item name="#6effb4">#6effb4</item>
+        <item name="#6dfefb">#6dfefb</item>
+        <item name="#6efffc">#6efffc</item>
+        <item name="#fc6eff">#6fbeff</item>
+        <item name="#6e6eff">#6e6eff</item>
+
+    </array>
+    <array name="dataColorTwo">
+        <item name="white">#fff</item>
+        <item name="white">#B3EBFAFE</item>
+        <item name="#fc6eff">#fedbff</item>
+        <item name="#e061a8">#e0c4d3</item>
+        <item name="#ff6d6e">#ffd8d9</item>
+        <item name="#ffb26c">#ffebda</item>
+        <item name="ffd7b3">#ffd7b3</item>
+        <item name="e0c4d3">#e0c4d3</item>
+        <item name="#fffb6c">#fefed8</item>
+        <item name="#b1ff6d">#ebffd9</item>
+        <item name="#6dff6e">#dcffdc</item>
+        <item name="#6effb4">#ddffee</item>
+        <item name="#6dfefb">#dcfefd</item>
+        <item name="#6efffc">#b6dfff</item>
+        <item name="#fc6eff">#dcdcff</item>
+        <item name="#6e6eff">#ecdcff</item>
+
+    </array>
+
+
+
+
+</resources>

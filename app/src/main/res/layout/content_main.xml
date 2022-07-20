@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frag"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <GridLayout
+        android:id="@+id/labeled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="@dimen/itemMarginLeftRight"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/text_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/open_sans"
+                android:text="@string/sortable"
+                android:textColor="#000000"
+                android:layout_column="0"
+                android:textSize="12sp">
+            </TextView>
+            <Spinner
+                android:id="@+id/spinner"
+                style="@style/spinner_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="12dp"
+                android:paddingRight="50dp"
+                android:layout_column="1"
+                android:textSize="12sp">
+            </Spinner>
+            <ImageView
+                android:id="@+id/cloud_sync"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop" />
+            <ImageButton
+                android:id="@+id/imageView"
+                android:layout_column="3"
+                android:layout_gravity="end"
+                android:layout_marginTop="7dp"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:scaleType="centerCrop" />
+
+    </GridLayout>
+    <TextView
+        android:id="@+id/idIsEmpty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/ifEmptyNote"
+        android:layout_centerInParent="true"
+        tools:ignore="MissingConstraints" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp">
+    </androidx.recyclerview.widget.RecyclerView>
+</androidx.constraintlayout.widget.ConstraintLayout>

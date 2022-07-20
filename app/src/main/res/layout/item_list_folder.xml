@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/itemMarginTopBottom"
+    android:layout_marginBottom="@dimen/itemMarginTopBottom"
+    android:layout_marginRight="@dimen/itemMarginLeftRight"
+    android:layout_marginLeft="@dimen/itemMarginLeftRight">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="40dp"
+                android:layout_width="40dp"
+                android:outlineAmbientShadowColor="@color/colorTheme"
+                app:srcCompat="@mipmap/folder_foreground" />
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="start|left"
+                android:layout_row="0"
+                android:paddingLeft="@dimen/itemPadding"
+                android:paddingRight="@dimen/itemPadding"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/countNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="75dp"
+                android:layout_gravity="end"
+                android:layout_row="0"
+                android:paddingLeft="@dimen/itemPadding"
+                android:paddingRight="@dimen/itemPadding"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="18sp" />
+        </GridLayout>
+                <TextView
+                    android:id="@+id/itemDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginRight="8dp"
+                    android:textStyle="bold"
+                    android:textSize="10sp"
+                    tools:ignore="MissingConstraints" />
+</androidx.cardview.widget.CardView>

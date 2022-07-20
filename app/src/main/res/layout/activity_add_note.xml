@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/superBackgroundAddNote"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ActivityAddNote"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <GridLayout
+        android:id="@+id/format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="60dp"
+        android:layout_gravity="right|top">
+        <ImageButton
+            android:id="@+id/adBold"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/bold" />
+        <ImageButton
+            android:id="@+id/adItalic"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:scaleType="centerCrop"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@mipmap/italic" />
+        <ImageButton
+            android:id="@+id/adUnderline"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:scaleType="centerCrop"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            app:srcCompat="@mipmap/underline" />
+         </GridLayout>
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="45dp">
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:text="@string/textForTitle"
+                />
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="17"
+                android:maxLength="80"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/open_sans"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:hint="@string/enterTitle"
+                android:inputType="textMultiLine"
+                android:text="" />
+
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/open_sans"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:textSize="20dp"
+                android:text="@string/textForContent"
+                />
+            <EditText
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="17"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:fontFamily="@font/open_sans"
+                android:hint="@string/enterContent"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:paddingTop="1dp"
+                android:text=""
+                android:textSize="20sp" />
+
+        </GridLayout>
+    </GridLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/BottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        app:itemBackground="@color/colorTheme"
+        android:background="@color/colorTheme"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        android:gravity="bottom"
+        app:layout_anchorGravity="bottom"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
